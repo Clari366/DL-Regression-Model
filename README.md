@@ -134,7 +134,8 @@ Include screenshot of the generated data
 ### OUTPUT
 Training Loss Vs Iteration Plot
 
-<img width="847" height="584" alt="449558540-14ec8933-6fee-40f1-9556-03083bce1e18" src="https://github.com/user-attachments/assets/e992fe1a-9846-4532-a29f-424e64a957cf" />
+
+<img width="698" height="448" alt="479420917-3ff6bc3a-293d-4416-9c54-d178cb697507" src="https://github.com/user-attachments/assets/85d67d6e-0866-4cb4-9df7-227d0734dc3b" />
 
 Best Fit line plot
 
