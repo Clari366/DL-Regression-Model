@@ -128,18 +128,23 @@ print(f"\nPrediction for x = 120:  {y_new_pred:.8f}")
 
 ### Dataset Information
 Include screenshot of the generated data
+
 <img width="778" height="600" alt="449558468-da678a21-a694-4fbc-b4b7-9a8d66d5b7fa" src="https://github.com/user-attachments/assets/15b1a9fa-f3c7-4bb0-882d-aae86fb5dfb0" />
 
 ### OUTPUT
 Training Loss Vs Iteration Plot
+
 <img width="847" height="584" alt="449558540-14ec8933-6fee-40f1-9556-03083bce1e18" src="https://github.com/user-attachments/assets/e992fe1a-9846-4532-a29f-424e64a957cf" />
 
 Best Fit line plot
+
 <img width="821" height="549" alt="449558550-89472abc-d3df-4489-b7d1-8d62c661d81f" src="https://github.com/user-attachments/assets/db44d711-3d1a-4b99-8be8-aa8b92f32429" />
 
 
 ### New Sample Data Prediction
 Include your sample input and output here
+
+
 <img width="403" height="66" alt="449558581-1e644305-71e2-4801-ba77-15aa8a3273c9" src="https://github.com/user-attachments/assets/9214c8ef-599b-4144-87b1-0b375126e2aa" />
 
 ## RESULT
