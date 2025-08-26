@@ -66,6 +66,72 @@ plt.ylabel('y')
 plt.title('Generated Data for Linear Regression')
 plt.show()
 torch.manual_seed(59)
+
+class Model(nn.Module):
+    def __init__(self, in_features, out_features):
+        super().__init__()
+        self.linear = nn.Linear(in_features, out_features)
+
+    def forward(self, x):
+        y_pred = self.linear(x)
+        return y_pred
+
+
+torch.manual_seed(59)
+model = Model(1, 1)
+print('Weight:', model.linear.weight.item())
+print('Bias:  ', model.linear.bias.item())
+
+loss_function = nn.MSELoss()
+
+optimizer = torch.optim.SGD(model.parameters(), lr=0.0001)
+
+epochs = 50
+losses = []
+
+for epoch in range(1, epochs + 1):
+    optimizer.zero_grad()
+    y_pred = model(X)
+    loss = loss_function(y_pred, y)
+    losses.append(loss.item())
+
+    loss.backward()
+    optimizer.step()
+
+
+    print(f'epoch: {epoch:2}  loss: {loss.item():10.8f}  '
+          f'weight: {model.linear.weight.item():10.8f}  '
+          f'bias: {model.linear.bias.item():10.8f}')
+
+plt.plot(range(epochs), losses)
+plt.ylabel('Loss')
+plt.xlabel('epoch');
+plt.show()
+
+
+x1 = torch.tensor([X.min().item(), X.max().item()])
+
+
+w1, b1 = model.linear.weight.item(), model.linear.bias.item()
+
+
+y1 = x1 * w1 + b1
+
+
+print(f'Final Weight: {w1:.8f}, Final Bias: {b1:.8f}')
+print(f'X range: {x1.numpy()}')
+print(f'Predicted Y values: {y1.numpy()}')
+
+
+plt.scatter(X.numpy(), y.numpy(), label="Original Data")
+plt.plot(x1.numpy(), y1.numpy(), 'r', label="Best-Fit Line")
+plt.xlabel('x')
+plt.ylabel('y')
+plt.title('Trained Model: Best-Fit Line')
+plt.legend()
+plt.show()
+
+
 ```
 
 ### Dataset Information
