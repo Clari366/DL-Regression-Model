@@ -145,7 +145,7 @@ Best Fit line plot
 Include your sample input and output here
 
 
-<img width="403" height="66" alt="449558581-1e644305-71e2-4801-ba77-15aa8a3273c9" src="https://github.com/user-attachments/assets/9214c8ef-599b-4144-87b1-0b375126e2aa" />
+<img width="617" height="75" alt="479421567-87d8a58d-4608-4136-8d33-f91ada0d760b" src="https://github.com/user-attachments/assets/d1c54364-e6e4-4323-9e8d-f99aec66d542" />
 
 ## RESULT
 Thus, a neural network regression model was successfully developed and trained using PyTorch.
